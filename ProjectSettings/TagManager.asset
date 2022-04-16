@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PlayerAttack1
   - NPCAttack1
+  - NPC
   layers:
   - Default
   - TransparentFX

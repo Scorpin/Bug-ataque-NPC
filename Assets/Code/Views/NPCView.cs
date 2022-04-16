@@ -79,7 +79,7 @@ public class NPCView : MonoBehaviour {
                 AttackMode();
                 break;
             case "PlayerAttack1":
-                Debug.Log("Gorgona atacada por jugador.");
+                Debug.Log("NPC: attacked from player. NPC disabled.");
                 //GetComponent<NavMeshAgent>().enabled = false;
                 //Destroy(GetComponent<NavMeshAgent>());
                 //_attack1BoxCollider.enabled = false;
@@ -117,7 +117,7 @@ public class NPCView : MonoBehaviour {
 
     public void ActiveAttack() {
 
-        Debug.Log("Gorgona: Ataque activado.");
+        Debug.Log("NPC: Attack activated.");
         _attack1GOTrigger.SetActive(true);
 
     }

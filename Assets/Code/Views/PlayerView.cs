@@ -89,15 +89,30 @@ public class PlayerView : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D collision) {
 
         //Debug.Log("Jugador: Colisión detectada por: " + collision.name + ", con ID: " + collision.GetInstanceID());
+        Debug.Log("Player: " + collision.tag + " entered.");
         switch (collision.tag) {
             case "NPCAttack1":
                 this.hp -= 10;
-                Debug.Log("Jugador: atacado por Gorgona. Restan " + hp.ToString());
+                Debug.Log("Player: attacked from NPC. Left " + hp.ToString() + " HP.");
                 //Debug.Log("Jugador: Me ha atacado: " + collision.name + ", con ID: " + collision.GetInstanceID());
                 //this._hpText.text = hp.ToString();
                 //uIHealthBar.UpdateHealthBar((float)this.hp / 100);
                 break;
         }
+
+    }
+
+    private void OnTriggerStay2D(Collider2D collision) {
+
+        if (collision.tag == "NPCAttack1") {
+            //Debug.Log(collision.tag + " se mantiene.");
+        }
+
+    }
+
+    private void OnTriggerExit2D(Collider2D collision) {
+
+        Debug.Log("Player: " + collision.tag + " is left.");
 
     }
 
