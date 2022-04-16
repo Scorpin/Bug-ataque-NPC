@@ -110,14 +110,14 @@ public class NPCView : MonoBehaviour {
 
         //_agent.isStopped = true;
         _childAnimator.SetTrigger("Attack");
-        Debug.Log("Se inicia ataque activado.");
+        //Debug.Log("Gorgona: Se inicia modo de ataque.");
         //Invoke("RepeatAttackOrMove", 1.4f);
 
     }
 
     public void ActiveAttack() {
 
-        Debug.Log("Ataque activado.");
+        Debug.Log("Gorgona: Ataque activado.");
         _attack1GOTrigger.SetActive(true);
 
     }
