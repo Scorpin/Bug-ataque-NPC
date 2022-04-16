@@ -92,8 +92,8 @@ public class PlayerView : MonoBehaviour {
         Debug.Log("Player: " + collision.tag + " entered.");
         switch (collision.tag) {
             case "NPCAttack1":
-                this.hp -= 10;
-                Debug.Log("Player: attacked from NPC. Left " + hp.ToString() + " HP.");
+                //this.hp -= 10;
+                //Debug.Log("Player: attacked from NPC. Left " + hp.ToString() + " HP.");
                 //Debug.Log("Jugador: Me ha atacado: " + collision.name + ", con ID: " + collision.GetInstanceID());
                 //this._hpText.text = hp.ToString();
                 //uIHealthBar.UpdateHealthBar((float)this.hp / 100);
