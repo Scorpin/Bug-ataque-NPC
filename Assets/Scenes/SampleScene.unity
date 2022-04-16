@@ -316,7 +316,7 @@ GameObject:
   - component: {fileID: 795459459}
   - component: {fileID: 795459460}
   m_Layer: 0
-  m_Name: Attack1
+  m_Name: PlayerAttack1
   m_TagString: PlayerAttack1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -500,7 +500,7 @@ GameObject:
   - component: {fileID: 1465042399}
   - component: {fileID: 1465042400}
   m_Layer: 0
-  m_Name: Attack1
+  m_Name: NPCAttack1
   m_TagString: NPCAttack1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
